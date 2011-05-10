@@ -10,9 +10,10 @@
   QUnit.config.autostart = false;
   using.path = ".";
   // Load up an entire suite
-  using('tests/test1', 
+  using('tests/test1', // <- Remember, we want this to fail
         'tests/test2',
         'tests/test3',
+        'tests/qunit_test.js',
 
     function() {
       start();
